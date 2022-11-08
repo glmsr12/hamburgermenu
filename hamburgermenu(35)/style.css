@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+  background-color: rgb(92, 71, 232);
+}
+
+.container {
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.logo {
+  width: 100px;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.navbar li a {
+  display: inline-block;
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  background-color: transparent;
+  border: 0;
+  color: aliceblue;
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.hamburger:focus-visible {
+  outline: none;
+}
+
+p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+.project {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto;
+  max-width: 700px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn {
+    width: 100%;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+
+  .navbar li a {
+    padding: 20px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .project {
+    width: 400px;
+  }
+}
